@@ -1,4 +1,4 @@
-load_template 'http://github.com/jjolma/rails-templates/raw/master/auth_template.rb'
+load_template 'http://github.com/jjolma/rails-templates/raw/master/base_template.rb'
 
 generate :nifty_authentication, 'user'
 rake 'db:migrate'
