@@ -11,9 +11,11 @@ git :add => '.'
 git :commit => "-m 'add welcome controller'"
 
 file "app/views/welcome/index.html.erb", <<-END
-  <p>
-    <%= "hi #{current_user.username}" if current_user -%>
-  </p>
+  <% if current_user -%>
+    <p>
+      hi <%= current_user.username -%>
+    </p>
+  <% end %>
   <p>
     <%= link_to 'sign up', signup_path -%>
   </p>
