@@ -10,5 +10,7 @@ log/.*log
 tmp/**/*
 END
 
+run "cp config/environments/development.rb config/environments/staging.rb"
+
 git :add => "."
 git :commit => "-m 'initial commit'"
